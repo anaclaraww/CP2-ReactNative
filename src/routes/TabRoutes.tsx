@@ -39,7 +39,7 @@ export function TabRoutes() {
         options={{
           tabBarLabel: 'Home',
           tabBarIcon: ({ focused }) => (
-            <TabIcon emoji="🏠︎" focused={focused} />
+            <TabIcon emoji="合" focused={focused} />
           ),
         }}
       />

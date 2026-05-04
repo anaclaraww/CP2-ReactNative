@@ -141,13 +141,13 @@ export function TaskDetailScreen({ route, navigation }: Props) {
 
         <View style={styles.actions}>
           <CustomButton
-            label="✏️  Editar"
+            label="✎ Editar"
             onPress={() => navigation.navigate('TaskForm', { taskId: task.id })}
             variant="secondary"
             style={styles.actionBtn}
           />
           <CustomButton
-            label="🗑️  Excluir"
+            label="× Excluir"
             onPress={confirmDelete}
             variant="danger"
             loading={deleting}

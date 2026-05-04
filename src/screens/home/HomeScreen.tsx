@@ -58,11 +58,9 @@ export function HomeScreen({ navigation }: Props) {
       >
         <View style={styles.greeting}>
           <Text style={[styles.greetingText, { color: colors.text }]}>
-            {user?.name.split(' ')[0]}!
+            Hello {user?.name.split(' ')[0]}!
           </Text>
-          <Text style={[styles.greetingSub, { color: colors.textSecondary }]}>
-            Veja como estão suas tarefas hoje
-          </Text>
+        
         </View>
 
         <View
@@ -95,6 +93,12 @@ export function HomeScreen({ navigation }: Props) {
               </Text>
             </>
           ) : null}
+        </View>
+
+        <View>
+            <Text style={[styles.greetingSub, { color: colors.textSecondary }]}>
+            Suas tarefas de hoje:
+          </Text>
         </View>
 
         <View style={styles.statsGrid}>

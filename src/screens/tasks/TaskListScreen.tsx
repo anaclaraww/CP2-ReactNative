@@ -79,7 +79,7 @@ export function TaskListScreen({ navigation }: Props) {
           ItemSeparatorComponent={() => <View style={{ height: 8 }} />}
           ListEmptyComponent={
             <EmptyState
-              icon="📭"
+              icon=""
               title="Nenhuma tarefa encontrada"
               description={
                 filter !== 'todos'

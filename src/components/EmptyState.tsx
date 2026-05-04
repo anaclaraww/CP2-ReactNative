@@ -12,7 +12,7 @@ interface EmptyStateProps {
 }
 
 export function EmptyState({
-  icon = '📭',
+  icon = '',
   title,
   description,
   actionLabel,

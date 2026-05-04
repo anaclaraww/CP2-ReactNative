@@ -53,7 +53,7 @@
           keyboardShouldPersistTaps="handled"
         >
           <View style={styles.hero}>
-            <Text style={styles.logo}>✅</Text>
+            <Text style={[styles.logo, { color: colors.text }]}>FIAP</Text>
             <Text style={[styles.appName, { color: colors.text }]}>TaskFlow</Text>
             <Text style={[styles.tagline, { color: colors.textSecondary }]}>
               Gerencie suas tarefas com facilidade
@@ -94,9 +94,6 @@
             />
           </View>
 
-          <Text style={[styles.hint, { color: colors.textSecondary }]}>
-            admin / 123 → Configurações {'  '}|{'  '} user / 123 → Home
-          </Text>
         </ScrollView>
       </KeyboardAvoidingView>
     );
