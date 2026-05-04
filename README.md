@@ -109,7 +109,7 @@ App.tsx                   # Providers + NavigationContainer
 - Redirecionamento por perfil (admin → Config, user → Home)
 - Logout limpa os dados
 
-### Tarefas (CRUD completo)
+### Tarefas
 - Criar tarefa com título, descrição, status, prioridade e categoria
 - Listar com FlatList, busca e filtro por status
 - Ver detalhe completo
@@ -125,6 +125,40 @@ App.tsx                   # Providers + NavigationContainer
 - Alternar tema dark/light (persistido)
 - Preferência de tratamento (Sr./Sra./Srta.)
 - Perfil do usuário logado
+
+---
+## Arquitetura
+Arquitetura baseada em Feature-based + Camadas
+```
+src/
+├── features/
+│   ├── auth/
+│   │   ├── components/
+│   │   ├── screens/
+│   │   ├── hooks/
+│   │   ├── services/
+│   │   ├── types/
+│   │   └── index.ts
+│   └── orders/
+│
+├── shared/
+│   ├── components/
+│   ├── hooks/
+│   ├── services/
+│   ├── utils/
+│   └── types/
+│
+├── navigation/
+├── config/
+└── App.tsx
+```
+
+## Fluco de dados
+```
+UI → Hook → Service → API
+           ↓
+        State
+```
 
 ---
 
