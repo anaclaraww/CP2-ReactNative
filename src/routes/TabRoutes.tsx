@@ -39,7 +39,7 @@ export function TabRoutes() {
         options={{
           tabBarLabel: 'Home',
           tabBarIcon: ({ focused }) => (
-            <TabIcon emoji="🏠" focused={focused} />
+            <TabIcon emoji="🏠︎" focused={focused} />
           ),
         }}
       />
@@ -49,7 +49,7 @@ export function TabRoutes() {
         options={{
           tabBarLabel: 'Tarefas',
           tabBarIcon: ({ focused }) => (
-            <TabIcon emoji="📋" focused={focused} />
+            <TabIcon emoji="☑" focused={focused} />
           ),
         }}
       />
@@ -59,7 +59,7 @@ export function TabRoutes() {
         options={{
           tabBarLabel: 'Config',
           tabBarIcon: ({ focused }) => (
-            <TabIcon emoji="⚙️" focused={focused} />
+            <TabIcon emoji="⚙︎" focused={focused} />
           ),
         }}
       />

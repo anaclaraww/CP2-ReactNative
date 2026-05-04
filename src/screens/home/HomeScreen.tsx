@@ -58,7 +58,7 @@ export function HomeScreen({ navigation }: Props) {
       >
         <View style={styles.greeting}>
           <Text style={[styles.greetingText, { color: colors.text }]}>
-            Olá, {user?.name.split(' ')[0]}! 👋
+            {user?.name.split(' ')[0]}!
           </Text>
           <Text style={[styles.greetingSub, { color: colors.textSecondary }]}>
             Veja como estão suas tarefas hoje

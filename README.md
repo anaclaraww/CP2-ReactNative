@@ -1,4 +1,4 @@
-# TaskFlow — App de Gerenciamento de Tarefas
+# TaskFlow
 
 Aplicativo mobile em React Native + TypeScript com Expo.
 
@@ -6,9 +6,9 @@ Aplicativo mobile em React Native + TypeScript com Expo.
 
 ## Tecnologias
 
-- React Native + Expo (~51)
-- TypeScript (strict, sem `any`)
-- React Navigation (Stack + Bottom Tabs)
+- React Native
+- TypeScript
+- React Navigation 
 - AsyncStorage
 - Context API (Auth, Task, Theme)
 - Fetch API (DummyJSON)
